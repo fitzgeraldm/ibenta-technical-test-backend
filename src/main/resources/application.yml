@@ -16,6 +16,8 @@ spring:
   profiles:
     include:
       - template
+      - users
+      - health
   datasource:
     url: jdbc:h2:mem:testdb
     username: sa

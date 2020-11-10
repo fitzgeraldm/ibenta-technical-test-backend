@@ -3,6 +3,8 @@ package au.com.ibenta.test.persistence;
 import lombok.Data;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
 
 @Data
 @Entity
@@ -20,6 +22,8 @@ public class UserEntity {
     private String lastName;
 
     @Column(nullable = false)
+    @Email
+    @NotBlank
     private String email;
 
     @Column(nullable = false)

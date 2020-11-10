@@ -215,7 +215,12 @@
 			<scope>test</scope>
 			<optional>true</optional>
 		</dependency>
-		<!-- // Test Dependencies -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!-- // Test Dependencies -->
 	</dependencies>
 
 	<dependencyManagement>
